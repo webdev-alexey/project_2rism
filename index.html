@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2rism - travel site</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container container--header">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="./img/logo.svg" alt="2rism">
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">Home</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">hotels</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">restaurants</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">tours</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">destinations</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">activities</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">contact</a></li>
+                </ul>
+
+                <div class="user">
+                    <div class="user__content">
+                        <span class="user__greeting">Holla,</span><br>
+                        <span class="user__name">Ales Nesetril</span>
+                    </div>
+                    <div class="user__avatar">
+                        <img class="user__avatar-img" src="./img/user.jpg" alt="Avatar">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__content">
+                <h1 class="header__title">
+                    Discover the most engaging places
+                </h1>
+
+                <button class="button">
+                    <img src="./img/icons/global.svg" alt="icon">
+                    Discover on 3D Globe
+                </button>
+            </div>
+
+            <form action="" class="header__form form">
+
+                <div class="form__input form__input--location">
+                    <label for="location" class="label">Location</label> <br>
+                    <select class="select" name="" id="location">
+                        <option value="all">Explore nearby destinations</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+
+                <div class="form__input form__input--activity">
+                    <label for="Activity" class="label">Activity</label> <br>
+                    <select class="select" name="" id="Activity">
+                        <option value="all">All Activities</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+
+                <div class="form__input form__input--when">
+                    <label for="When" class="label">When</label> <br>
+                    <select class="select" name="" id="When">
+                        <option value="all">Choose a Date</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+
+                <div class="form__input form__input--guests">
+                    <label for="Guests" class="label">Guests</label> <br>
+                    <select class="select" name="" id="Guests">
+                        <option value="all">1 guest</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+
+                <button class="button-search">
+                    <img src="./img/icons/search.svg" alt="Search">
+                    Search
+                </button>
+
+            </form>
+        </div>
+    </header>
+
+
+    <script src="./libs/custom-select/custom-select.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

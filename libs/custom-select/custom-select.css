@@ -54,3 +54,42 @@
   padding: 0.5em;
   color: #888;
 }
+
+/* ------- OVERRIDES ------------ */
+
+/* Custom select */
+
+/* Structure Classes */
+
+/* containerClass: 'custom-select-container' may have isDisabledClass, isOpenClass */
+.custom-select-container {
+	padding-top: 0px;
+}
+
+/* panelClass: 'custom-select-panel' */
+.custom-select-panel {
+	font-size: 14px;
+	top: calc(100% + 22px);
+	background-color: #fff;
+	box-shadow: 0px 5px 20px rgb(8 41 55 / 34%);
+	border-radius: 0px 0px 8px 8px;
+}
+
+/* optionClass: 'custom-select-option' may have isSelectedClass, hasFocusClass */
+.custom-select-option {
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.custom-select-option.is-selected {
+	font-weight: 600;
+}
+
+.custom-select-option.is-selected::before {
+	content: none;
+}
+
+.custom-select-option.has-focus {
+	background-color: #ebe5f9;
+}

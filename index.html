@@ -1,112 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2rism - travel site</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>2rism</title>
+        <!-- <link rel="stylesheet" href="./libs/easepick/easpick.min.css"> -->
+		<link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
+        <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
+    </head>
+	<body>
+		<header class="header">
+			<div class="container container--header">
 
-    <header class="header">
-        <div class="container container--header">
-            <nav class="nav">
-                <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="2rism">
-                </a>
+				<nav class="nav">
+					<a href="#!" class="logo">
+						<img src="./img/logo/logo.svg" alt="2Rism" />
+					</a>
 
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">Home</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">hotels</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">restaurants</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">tours</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">destinations</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">activities</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">contact</a></li>
-                </ul>
+					<ul class="nav-list">
+						<li class="nav-list__item">
+							<a
+								href="#"
+								class="nav-list__link nav-list__link--active"
+								>home</a
+							>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">hotels</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">restaurants</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">tours</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">destinations</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">activities</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link">contact</a>
+						</li>
+					</ul>
 
-                <div class="user">
-                    <div class="user__content">
-                        <span class="user__greeting">Holla,</span><br>
-                        <span class="user__name">Ales Nesetril</span>
+                    <div class="user">
+                        <div class="user__content">
+                            <span class="user__greeting">Holla,</span>
+                            <span class="user__name">Ales Nesetril</span>
+                        </div>
+                        <div class="user__avatar">
+                            <img class="user__img" src="./img/header/user.jpg" alt="Avatar">
+                        </div>
                     </div>
-                    <div class="user__avatar">
-                        <img class="user__avatar-img" src="./img/user.jpg" alt="Avatar">
+				</nav>
+
+                <div class="header__content">
+                    <h1 class="header__title">
+                        Discover the most engaging places
+                    </h1>
+                    <button class="button button--huge">
+                        <img src="./img/icons/global.svg" alt="">
+                        Discover on 3D Globe
+                    </button>
+                </div>
+
+                <form action="" class="form">
+
+                    <div class="form__input-wrapper form__input--location">
+                        <label for="location" class="form__label">Location</label>
+                        <input autocomplete="off" type="text" class="form__input" id="location" placeholder="Explore nearby destinations">
+                    </div>
+
+                    <div class="form__input-wrapper form__input--activity">
+                        <label for="activity" class="form__label">Activity</label>
+                        <select name="activity" id="activity" class="form__select">
+                            <option value="all">All Activities</option>
+                            <option value="Culture">Culture</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Extreme">Extreme</option>
+                        </select>
+                    </div>
+
+                    <div class="form__input-wrapper form__input--date">
+                        <label for="date" class="form__label">When</label>
+                        <input type="text" class="form__input" id="date" placeholder="Choose a Date">
+                    </div>
+
+                    <div class="form__input-wrapper form__input--guests">
+                        <label for="location" class="form__label">Guests</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">1 guest</option>
+                            <option value="">2 guest</option>
+                            <option value="">3 guest</option>
+                            <option value="">4 guests or more</option>
+                        </select>
+                    </div>
+
+                    <button class="button button--search">
+                        <img src="./img/icons/search.svg" alt="Search">
+                    </button>
+                </form>
+
+			</div>
+		</header>
+
+        <main class="main">
+
+            <!-- Popular -->
+            <section class="section">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="title-1">Popular Destinations</h2>
+                    </div>
+                    <div class="section__cards section__cards--popular">
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/01.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/02.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/03.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/04.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/05.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/popular/06.jpg" alt="Img">
+                            <h3 class="card__title">Big Sur</h3>
+                            <a href="#california" class="card__location">California, USA</a>
+                        </article>
                     </div>
                 </div>
-            </nav>
+            </section>
 
-            <div class="header__content">
-                <h1 class="header__title">
-                    Discover the most engaging places
-                </h1>
+            <!-- Hotel -->
+            <section class="section">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="title-1">Hotels and Restaurants</h2>
+                        <a href="#!" class="button-more">
+                            View all
+                            <img src="./img/icons/arrow-more.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="section__cards section__cards--4-in-row">
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotels/01.jpg" alt="Img">
+                            <h3 class="card__title card__title--hotel">Monastero Santa Rosa Hotel & Spa</h3>
 
-                <button class="button">
-                    <img src="./img/icons/global.svg" alt="icon">
-                    Discover on 3D Globe
-                </button>
-            </div>
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Salerno, Italy</a>
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
 
-            <form action="" class="header__form form">
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotels/02.jpg" alt="Img">
+                            <h3 class="card__title card__title--hotel">Monastero Santa Rosa Hotel & Spa</h3>
 
-                <div class="form__input form__input--location">
-                    <label for="location" class="label">Location</label> <br>
-                    <select class="select" name="" id="location">
-                        <option value="all">Explore nearby destinations</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                    </select>
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Salerno, Italy</a>
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotels/03.jpg" alt="Img">
+                            <h3 class="card__title card__title--hotel">Monastero Santa Rosa Hotel & Spa</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Salerno, Italy</a>
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotels/04.jpg" alt="Img">
+                            <h3 class="card__title card__title--hotel">Monastero Santa Rosa Hotel & Spa</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Salerno, Italy</a>
+                                <div class="card__rating">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star.svg" alt="">
+                                    <img src="./img/icons/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
-                <div class="form__input form__input--activity">
-                    <label for="Activity" class="label">Activity</label> <br>
-                    <select class="select" name="" id="Activity">
-                        <option value="all">All Activities</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                    </select>
+
+            <!-- Activities -->
+            <section class="section">
+                <div class="container">
+
+                    <header class="section__header">
+                        <h2 class="title-1">Activities</h2>
+                        <a href="#!" class="button-more">
+                            View all
+                            <img src="./img/icons/arrow-more.svg" alt="Arrow">
+                        </a>
+                    </header>
+
+                    <div class="section__cards section__cards--4-in-row">
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/activity/01.jpg" alt="Img">
+                            <h3 class="card__title">Sailing</h3>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/activity/02.jpg" alt="Img">
+                            <h3 class="card__title">Sailing</h3>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/activity/03.jpg" alt="Img">
+                            <h3 class="card__title">Sailing</h3>
+                        </article>
+
+                        <article class="card">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/activity/04.jpg" alt="Img">
+                            <h3 class="card__title">Sailing</h3>
+                        </article>
+
+
+                    </div>
                 </div>
-
-                <div class="form__input form__input--when">
-                    <label for="When" class="label">When</label> <br>
-                    <select class="select" name="" id="When">
-                        <option value="all">Choose a Date</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                    </select>
-                </div>
-
-                <div class="form__input form__input--guests">
-                    <label for="Guests" class="label">Guests</label> <br>
-                    <select class="select" name="" id="Guests">
-                        <option value="all">1 guest</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                    </select>
-                </div>
-
-                <button class="button-search">
-                    <img src="./img/icons/search.svg" alt="Search">
-                    Search
-                </button>
-
-            </form>
-        </div>
-    </header>
+            </section>
 
 
-    <script src="./libs/custom-select/custom-select.min.js"></script>
-    <script src="./js/main.js"></script>
+        </main>
 
-</body>
+
+        <script src="./libs/autoComplete/autoComplete.min.js"></script>
+        <script src="./libs/custom-select/custom-select.min.js"></script>
+        <script src="./libs/easepick/easepick.min.js"></script>
+
+        <script src="./js/input-dest.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
 </html>
